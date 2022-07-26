@@ -1,0 +1,36 @@
+
+
+.logo {
+    height:225px;
+  /* From https://css.glass */
+background: rgba(233, 239, 244, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+position: relative;
+    display: inline-block;
+    margin: 20%;
+    padding: 15px 30px;
+    /* From https://css.glass */
+background: rgba(239, 230, 230, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(239, 230, 230, 0.51);
+   }.img {
+    width: auto; 
+    max-height: 100%; 
+    position: relative;
+    display: inline-block;
+    margin: 20%;
+    padding: 15px 30px;
+    /* From https://css.glass */
+background: rgba(239, 230, 230, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(239, 230, 230, 0.51);
+   }
