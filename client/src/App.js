@@ -1,26 +1,25 @@
-import './App.css';
-import Logo from "../src/style/img/Logo.gif";
-import logo2 from "../src/style/img/logo2.gif"
-import logo3 from "../src/style/img/logo3.gif"
-import Rick from '../src/style/audio/Rick.mp3'
-import style from "../src/style/App.module.css";
+import { BrowserRouter, Route } from "react-router-dom";
+import "./App.css";
+import Characters from "./components/Characters.jsx";
+import CharactersDetail from "./components/CharactersDetail.jsx";
+import SearchBar from "./components/SearchBar.jsx";
+import Order from "./components/Order.jsx";
+import addCharacter from "./components/AddCharacter.jsx";
+import Landing from "./components/Landing";
 function App() {
   return (
-    <>
     <div className="App">
-    <img className={style.logo} src={Logo} alt="" />
+      
+      <BrowserRouter>
+       
+        <Route exact path="/add" component={addCharacter} />
+        <Route  exact path="/:id" component={CharactersDetail} />
+        <Route  exact path="/home" component={Landing}/>
+        <Route exact path="/" component={SearchBar} />
+        <Route exact path="/" component={Order} />
+        <Route exact path="/" component={Characters} />
+      </BrowserRouter>
     </div>
-    <div className="App">
-    <img className={style.logo} src={logo2 } alt="" />
-    </div>
-    <div className="App">
-    <img className={style.logo} src={logo3 } alt="" />
-    </div>
-    <div>
-    <audio src={Rick}></audio>
-    </div>
-   
-    </>
   );
 }
 

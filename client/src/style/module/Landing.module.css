@@ -19,6 +19,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(4px);
 -webkit-backdrop-filter: blur(4px);
 border: 1px solid rgba(239, 230, 230, 0.51);
+background: linear-gradient(rgba(14, 235, 69,0.20),rgba(71, 239, 9,0.20));
    }.img {
     width: auto; 
     max-height: 100%; 
